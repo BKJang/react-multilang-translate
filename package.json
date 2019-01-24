@@ -1,0 +1,27 @@
+{
+  "name": "react-translation",
+  "version": "1.0.0",
+  "description": "translation module for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BKJang/react-translation.git"
+  },
+  "keywords": [
+    "react",
+    "translation",
+    "react-translation"
+  ],
+  "author": "BKJang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BKJang/react-translation/issues"
+  },
+  "homepage": "https://github.com/BKJang/react-translation#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
+}
