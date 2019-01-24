@@ -32,7 +32,6 @@ export default class Translation extends Component {
     translate(key, locale, messageObj) {
         if (key && locale)
             this.setState({ translation: messageObj[locale][key] });
-
     }
 
     render() {
