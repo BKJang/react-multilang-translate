@@ -1,2 +1,2 @@
 export { default as Translate } from './Translate';
-export { default as Translation } from './Translation';
+export { default as Translator } from './Translator';

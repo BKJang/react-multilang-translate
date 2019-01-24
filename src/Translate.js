@@ -4,11 +4,6 @@ import { PropTypes } from 'prop-types';
 
 export default class Translate extends Component {
 
-    static propTypes = {
-        translation: PropTypes.string.isRequired,
-        styles: PropTypes.Object
-    };
-
     render() {
         const { translation, styles } = this.props;
 
@@ -24,10 +19,12 @@ export default class Translate extends Component {
                     return <span key={index}><span styles={styles ? styles : {}}>{text}</span><br /></span>
                 })
             ) : (
-                translation
-            )
+                    translation
+                )
         )
     }
 }
 
-
+Translate.propTypes = {
+    translation: PropTypes.string.isRequired,
+};
