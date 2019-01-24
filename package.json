@@ -1,5 +1,5 @@
 {
-  "name": "react-translation",
+  "name": "react-translation-provider",
   "version": "0.1.0",
   "description": "translation module for react",
   "main": "index.js",
