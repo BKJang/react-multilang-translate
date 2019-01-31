@@ -1,6 +1,6 @@
 {
   "name": "react-multilang-translate",
-  "version": "0.3.0",
+  "version": "0.2.8",
   "description": "React component for translation.",
   "main": "index.js",
   "scripts": {
