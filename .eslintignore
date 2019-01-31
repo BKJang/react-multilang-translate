@@ -1,0 +1,5 @@
+# npm 라이브러리 대상에서 제외
+node_modules
+
+# lib 폴더는 대상에서 제외
+lib
