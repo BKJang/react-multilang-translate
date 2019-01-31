@@ -16,7 +16,7 @@ export default class Translate extends Component {
         return (
             isRow ? (
                 transArr.map(function (text, index) {
-                    return <span key={index}><span styles={styles ? styles : {}}>{text}</span><br /></span>
+                    return <span key={index}><span style={styles ? styles : {}}>{text}</span><br /></span>
                 })
             ) : (
                     translation

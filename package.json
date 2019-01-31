@@ -1,7 +1,7 @@
 {
   "name": "react-multilang-translate",
-  "version": "0.2.8",
-  "description": "React component for translation.",
+  "version": "0.2.10",
+  "description": "Module that provides an easy way to translate into your preferred language in React.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
