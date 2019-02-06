@@ -1,0 +1,16 @@
+{
+    "extends": ["standard", "plugin:react/recommended"],
+    "rules": {
+        "import/import/no-unresolved": ["off"],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "react/jsx-filename-extension": ["off"],
+        "react/no-find-dom-node": ["warning"],
+        "react/sort-comp": ["error", {
+            "order": [
+                "static-methods",
+                "everything-else",
+                "render"
+            ]
+        }]
+    }
+}
