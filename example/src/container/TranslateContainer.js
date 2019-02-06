@@ -12,7 +12,6 @@ class TranslateContainer extends Component {
   }
 
   handleSelect = locale => {
-    console.log(locale);
     this.setState({
       locale
     });
