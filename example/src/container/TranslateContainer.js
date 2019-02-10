@@ -1,29 +1,31 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import LangChanger from "../component/LangChanger";
-import { setLanguage } from "../store/modules/translator";
+import Translation from '../component/Translation';
 
 class TranslateContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      locale: "en_US"
+    };
+  }
+
   handleSelect = locale => {
-    const { setLanguage } = this.props;
-    setLanguage(locale);
+    this.setState({
+      locale
+    });
   };
 
   render() {
-    const { locale } = this.props;
-    return <LangChanger onSelect={this.handleSelect} selected={locale} />;
+    const { locale } = this.state;
+    return (
+      <>
+        <LangChanger onSelect={this.handleSelect} selected={locale} />
+        <Translation transKey="example_say_hello" locale={locale} />
+      </>
+    );
   }
 }
 
-const mapStateToProps = state => ({
-  locale: state.translator.locale
-});
-
-const mapDispatchToProps = dispatch => ({
-  setLanguage: locale => dispatch(setLanguage(locale))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TranslateContainer);
+export default TranslateContainer;
